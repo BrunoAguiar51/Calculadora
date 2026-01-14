@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Hipoteca</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/604cf2d179.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    </head>
+    <body>
+        <main>
+            <section class="calculator">
+                <form>
+                    <header>
+                        <h2>Calculadora de Hipoteca</h2>
+                        <button type="reset">Limpar tudo</button>
+                    </header>
+
+                    <div class="fields">
+                        <div class="field-amount">
+                            <label for="iamount">Valor da Hipoteca</label>
+                            <div class="calc">
+                                <i class="fa-solid fa-sterling-sign"></i>
+                                <input type="number" name="amount" id="iamount" required placeholder="0" min="0">
+                            </div>
+                        </div>
+                        <div class="field-term">
+                            <label for="iterm">Prazo da Hipoteca</label>
+                            <div class="calc">
+                                <input type="number" name="term" id="iterm" required placeholder="0" min="0">
+                                <span>Years</span>
+                            </div>
+                        </div>
+                        <div class="field-rate">
+                             <label for="irate">Taxa de Juros</label>
+                            <div class="calc">
+                                <input type="number" name="rate" id="irate" required placeholder="0" min="0">
+                                <span>%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                        <fieldset class="type">
+                            <legend>
+                                <span>Tipo de Hipoteca
+                                </span>
+                            </legend>
+                                <div class="option">
+                                    <input type="radio" name="type" id="itype1" required checked>
+                                    <label for="itype1">Reembolso</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="type" id="itype2">
+                                    <label for="itype2">Apenas Juros</label>
+                                </div>
+                        </fieldset>
+
+                        <div class="calculate">
+                            <i class="fa-solid fa-calculator"></i>
+                            <button type="submit">Calcular Reembolsos</button>
+                        </div>
+                </form>
+            </section>
+
+            <section class="calculator-result">
+                <img src="assets/images/illustration-empty.svg" alt="Ilustração de calculadora">
+                <h1>Veja o resultado aqui</h1>
+                <p>Complete o formulário e clique em "calcular reembolsos" para ver quanto seriam seus pagamentos mensais.</p>
+            </section>
+        </main>
+    </body>
+</html>

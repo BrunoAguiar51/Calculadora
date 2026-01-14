@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    margin: 30px 0 20px 0;
+}
+
+header h2 {
+    padding-bottom: 10px;
+    color: hsl(201, 57%, 25%);
+}
+
+button[type="reset"] {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: hsl(200, 24%, 40%);
+    cursor: pointer;
+}
+
+button[type="reset"]:hover {
+    color: hsl(202, 55%, 16%);
+}
+
+div.fields {
+    margin-bottom: 20px;
+}
+
+div.fields label,
+fieldset.type legend {
+    color: hsl(200, 24%, 40%);
+    font-weight: bold;
+}
+
+div.calc {
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #6b94a8;
+    display: flex;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+div.calc i, 
+div.calc span {
+    background-color: hsl(202, 86%, 94%);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    padding: 0 18px;
+    color: hsl(200, 24%, 40%);
+    font-weight: bold;
+}
+
+div.calc input {
+    border: none;
+    flex: 1;
+    height: 100%;
+    outline: none;
+    padding-left: 10px;
+    font-weight: bold;
+    color: hsl(202, 55%, 16%);
+}
+
+fieldset.type {
+    margin-bottom: 20px;
+    border: none;
+}
+
+fieldset.type legend {
+    margin-bottom: 10px;
+}
+
+fieldset.type span {
+    font-weight: bold;
+    color: hsl(200, 24%, 40%);
+}
+
+fieldset.type div.option {
+    border: 1px solid hsl(200, 26%, 54%);
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    text-indent: 10px;
+}
+
+div.option input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    border: 1px solid hsl(201, 58%, 20%);
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.option input[type="radio"]:checked {
+  border-color: #2d6cdf;
+}
+
+.option input[type="radio"]:checked::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #2d6cdf;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.option:has(input:checked) {
+  border-color: hsl(61, 70%, 52%);
+  background-color: #FAFAE0;
+  transition: 0.3s;
+}
+
+div.option label {
+    cursor: pointer;
+    font-weight: bold;
+    color: hsl(201, 58%, 20%);
+}
+
+div.calculate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9DB30;
+    border-radius: 30px;
+    height: 40px;
+    gap: 10px;
+}
+
+div.calculate button[type="submit"] {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1em;
+    
+}
+
+section.calculator-result {
+    background-color: #133040;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: ;
+}
+
+section.calculator-result img {
+    width: 200px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+section.calculator-result h1 {
+    color: hsl(202, 86%, 94%);
+    margin: 20px 0;
+}
+
+section.calculator-result p {
+    color: hsl(202, 86%, 94%);
+    line-height: 20px;
+    margin-bottom: 40px;
+    padding: 0 60px;
+}
